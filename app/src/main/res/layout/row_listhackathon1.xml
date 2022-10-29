@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listhackathon1RowModel" type="com.lordhebx.app.modules.menustaff.data.model.Listhackathon1RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackhackathon"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:ellipsize="end" android:gravity="top|start"
+            android:id="@+id/txtHackathon"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{listhackathon1RowModel.txtHackathon}"
+            style="@style/txtMontserratbold12_1" tools:text="@string/lbl_hackathon"/>
+        <FrameLayout android:id="@+id/frameStackhackathonOne"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_12pxv" android:layout_width="@dimen/_70pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtHackathonOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listhackathon1RowModel.txtHackathonOne}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/lbl_hackathon"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtHackathonTwo"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listhackathon1RowModel.txtHackathonTwo}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/lbl_hackathon"/>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

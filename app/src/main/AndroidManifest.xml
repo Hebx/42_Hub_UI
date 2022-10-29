@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.lordhebx.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.lordhebx.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.lordhebx.app.modules.checkinsecurity.ui.CheckinSecurityActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.cafeteriacheckin.ui.CafeteriaCheckinActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.eventsmovie.ui.EventsMovieActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.cafeteriachekinform.ui.CafeteriaChekinFormActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.menu.ui.MenuActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.eventsfootballwaitinglist.ui.EventsFootballWaitinglistActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.foods.ui.FoodsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.reportsecurity.ui.ReportSecurityActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.eventsmoviefeedback.ui.EventsMovieFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.foodselectioninformation.ui.FoodselectionInformationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.eventsmoviefeedbackadd.ui.EventsMovieFeedbackAddActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.homestaff.ui.HomeStaffActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.menustaff.ui.MenuStaffActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.dashboard.ui.DashboardActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.checkinmenusecurity.ui.CheckinMenuSecurityActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.eventsfootball.ui.EventsFootballActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.calendar.ui.CalendarActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.homestudent.ui.HomeStudentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lordhebx.app.modules.cafeteriamenu.ui.CafeteriaMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.lordhebx.app.modules.onboard.ui.OnboardActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

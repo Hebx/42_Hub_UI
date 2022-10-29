@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listellipse1RowModel" type="com.lordhebx.app.modules.reportsecurity.data.model.Listellipse1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowellipse"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <FrameLayout android:id="@+id/frameStackellipse"
+            android:layout_height="@dimen/_36pxv"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_36pxh">
+            <ImageView android:id="@+id/imageEllipse"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_36pxh"
+                android:layout_width="@dimen/_36pxh"
+                android:scaleType="centerCrop" circular="@{true}"
+                imageRes="@{@drawable/img_ellipse}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse"/>
+            <ImageView android:id="@+id/imageEllipseOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_36pxh"
+                android:layout_width="@dimen/_36pxh"
+                android:scaleType="centerCrop" circular="@{true}"
+                imageRes="@{@drawable/img_ellipse}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameStackaelita"
+            android:layout_height="@dimen/_39pxv"
+            android:layout_marginStart="@dimen/_16pxh" android:layout_width="@dimen/_155pxh">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAelita"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listellipse1RowModel.txtAelita}"
+                style="@style/txtMontserratromanregular16" tools:text="@string/lbl_aelita"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start" android:id="@+id/txtTime"
+                android:layout_gravity="bottom|start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listellipse1RowModel.txtTime}"
+                style="@style/txtMontserratromanbold14_2" tools:text="@string/msg_jan_10_2022_10"/>
+            <LinearLayout android:id="@+id/linearColumnaelitaOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtAelitaOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_1pxh"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{listellipse1RowModel.txtAelitaOne}"
+                    style="@style/txtMontserratromanregular16" tools:text="@string/lbl_aelita"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTimeOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{listellipse1RowModel.txtTimeOne}"
+                    style="@style/txtMontserratromanbold14_2" tools:text="@string/msg_jan_10_2022_10"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

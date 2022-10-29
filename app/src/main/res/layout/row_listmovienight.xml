@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listmovienightRowModel" type="com.lordhebx.app.modules.menustaff.data.model.ListmovienightRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackmovienight"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:ellipsize="end" android:gravity="top|start"
+            android:id="@+id/txtMovieNight"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{listmovienightRowModel.txtMovieNight}"
+            style="@style/txtMontserratbold12_1" tools:text="@string/lbl_movie_night"/>
+        <FrameLayout android:id="@+id/frameStackmovienightOne"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_12pxv" android:layout_width="@dimen/_77pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtMovieNightOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listmovienightRowModel.txtMovieNightOne}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/lbl_movie_night"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtMovieNightTwo"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listmovienightRowModel.txtMovieNightTwo}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/lbl_movie_night"/>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

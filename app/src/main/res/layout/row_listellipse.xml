@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listellipseRowModel" type="com.lordhebx.app.modules.checkinsecurity.data.model.ListellipseRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowellipse"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageView android:id="@+id/imageEllipse"
+            android:layout_height="@dimen/_36pxh"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="@dimen/_36pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_ellipse}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse"/>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnaelita"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_weight="0.81" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAelita"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listellipseRowModel.txtAelita}"
+                style="@style/txtMontserratromanregular16" tools:text="@string/lbl_aelita"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listellipseRowModel.txtTime}"
+                style="@style/txtMontserratromanbold14_2" tools:text="@string/msg_jan_10_2022_10"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

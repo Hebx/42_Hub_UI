@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listfootballmatch1RowModel" type="com.lordhebx.app.modules.menustaff.data.model.Listfootballmatch1RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackfootballmatch"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:ellipsize="end" android:gravity="top|start"
+            android:id="@+id/txtFootballMatch"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{listfootballmatch1RowModel.txtFootballMatch}"
+            style="@style/txtMontserratbold12_1" tools:text="@string/lbl_football_match"/>
+        <FrameLayout android:id="@+id/frameStackfootballmatchOne"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_12pxv" android:layout_width="@dimen/_94pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtFootballMatchOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listfootballmatch1RowModel.txtFootballMatchOne}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/lbl_football_match"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtFootballMatchTwo"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listfootballmatch1RowModel.txtFootballMatchTwo}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/lbl_football_match"/>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

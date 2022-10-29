@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="foodsRowModel" type="com.lordhebx.app.modules.foods.data.model.FoodsRowModel"/>
+    </data>
+    <LinearLayout android:gravity="end"
+        android:id="@+id/linearColumnfivehundredten"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylelime_4">
+        <ImageView android:id="@+id/imageImageFortyOne"
+            android:layout_height="@dimen/_13pxh"
+            android:layout_marginEnd="@dimen/_3pxh"
+            android:layout_marginStart="@dimen/_140pxh"
+            android:layout_marginTop="@dimen/_7pxv"
+            android:layout_width="@dimen/_13pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_image41"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image41"/>
+        <LinearLayout android:id="@+id/linearColumnmaccheese"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtMacCheese"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{foodsRowModel.txtMacCheese}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/lbl_mac_cheese"/>
+            <TextView android:gravity="start"
+                android:id="@+id/txtVerydelecious"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:text="@{foodsRowModel.txtVerydelecious}"
+                style="@style/txtMontserratbold6" tools:text="@string/msg_very_delecious"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageImageThirtyThree"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_35pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_width="@dimen/_40pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_image33"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image33"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtFiveHundredTen"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginStart="@dimen/_121pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{foodsRowModel.txtFiveHundredTen}"
+            style="@style/txtMontserratbold10" tools:text="@string/lbl_5_10"/>
+    </LinearLayout>
+</layout>

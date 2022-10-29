@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listfootballmatch2RowModel" type="com.lordhebx.app.modules.homestudent.data.model.Listfootballmatch2RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowfootballmatch"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <FrameLayout android:id="@+id/frameStack3415"
+            android:layout_height="@dimen/_179pxv" android:layout_width="@dimen/_156pxh">
+            <LinearLayout android:id="@+id/linearColumnfootballmatch"
+                android:layout_gravity="bottom|end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:id="@+id/frameStackfootballmatch"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_12pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_7pxh" android:layout_width="@dimen/_94pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtFootballMatch"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{listfootballmatch2RowModel.txtFootballMatch}"
+                        style="@style/txtMontserratbold12_1" tools:text="@string/lbl_football_match"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackfootballmatchOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_12pxv" android:layout_width="@dimen/_94pxh">
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtFootballMatchOne"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{listfootballmatch2RowModel.txtFootballMatchOne}"
+                            style="@style/txtMontserratbold12_1" tools:text="@string/lbl_football_match"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtFootballMatchTwo"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{listfootballmatch2RowModel.txtFootballMatchTwo}"
+                            style="@style/txtMontserratbold12_1" tools:text="@string/lbl_football_match"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStackverydelecious"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_26pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_91pxh">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtVerydelecious"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:text="@{listfootballmatch2RowModel.txtVerydelecious}"
+                        style="@style/txtMontserratbold6" tools:text="@string/msg_very_delecious"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackverydeleciousOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_26pxv" android:layout_width="@dimen/_91pxh">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtVerydeleciousOne"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:text="@{listfootballmatch2RowModel.txtVerydeleciousOne}"
+                            style="@style/txtMontserratbold6" tools:text="@string/msg_very_delecious"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtVerydeleciousTwo"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:text="@{listfootballmatch2RowModel.txtVerydeleciousTwo}"
+                            style="@style/txtMontserratbold6" tools:text="@string/msg_very_delecious"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStackOne"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_40pxv"
+                    android:layout_marginEnd="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_40pxh"
+                    android:layout_marginTop="@dimen/_29pxv" android:layout_width="@dimen/_40pxh">
+                    <ImageView android:id="@+id/imageImageFiftySeven"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_40pxh"
+                        android:layout_width="@dimen/_40pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_image10"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_image10"/>
+                    <FrameLayout android:id="@+id/frameStack"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_40pxv" android:layout_width="@dimen/_40pxh">
+                        <ImageView android:id="@+id/imageImageSixtyOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_image10"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_image10"/>
+                        <ImageView android:id="@+id/imageImageSixtyFive"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_image10"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_image10"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStack3416"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_10pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_18pxv" android:layout_width="@dimen/_34pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txt3414"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{listfootballmatch2RowModel.txt3414}"
+                        style="@style/txtMontserratbold10" tools:text="@string/lbl_34_14"/>
+                    <FrameLayout android:id="@+id/frameStack3414One"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_10pxv" android:layout_width="@dimen/_34pxh">
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txt3414One"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{listfootballmatch2RowModel.txt3414One}"
+                            style="@style/txtMontserratbold10" tools:text="@string/lbl_34_14"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txt3414Two"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{listfootballmatch2RowModel.txt3414Two}"
+                            style="@style/txtMontserratbold10" tools:text="@string/lbl_34_14"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearColumn3414Three"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_3">
+                <LinearLayout
+                    android:id="@+id/linearColumnfootballmatchThree"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtFootballMatchThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_11pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{listfootballmatch2RowModel.txtFootballMatchThree}"
+                        style="@style/txtMontserratbold12_1" tools:text="@string/lbl_football_match"/>
+                    <TextView android:gravity="start"
+                        android:id="@+id/txtVerydeleciousThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_3pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:text="@{listfootballmatch2RowModel.txtVerydeleciousThree}"
+                        style="@style/txtMontserratbold6" tools:text="@string/msg_very_delecious"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageImageSixtyNine"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_40pxh"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_26pxv"
+                    android:layout_width="@dimen/_40pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_image41_40x40"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image41_40x40"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txt3414Three"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_5pxh"
+                    android:layout_marginStart="@dimen/_117pxh"
+                    android:layout_marginTop="@dimen/_18pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{listfootballmatch2RowModel.txt3414Three}"
+                    style="@style/txtMontserratbold10" tools:text="@string/lbl_34_14"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/frameStack1011"
+            android:layout_height="@dimen/_179pxv"
+            android:layout_marginStart="@dimen/_23pxh" android:layout_width="@dimen/_156pxh">
+            <FrameLayout android:id="@+id/frameStack1012"
+                android:layout_gravity="bottom|end"
+                android:layout_height="@dimen/_10pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_31pxh">
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txt1010"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{listfootballmatch2RowModel.txt1010}"
+                    style="@style/txtMontserratbold10" tools:text="@string/lbl_10_10"/>
+                <FrameLayout android:id="@+id/frameStack1010One"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_10pxv" android:layout_width="@dimen/_31pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txt1010One"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{listfootballmatch2RowModel.txt1010One}"
+                        style="@style/txtMontserratbold10" tools:text="@string/lbl_10_10"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txt1010Two"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{listfootballmatch2RowModel.txt1010Two}"
+                        style="@style/txtMontserratbold10" tools:text="@string/lbl_10_10"/>
+                </FrameLayout>
+            </FrameLayout>
+            <LinearLayout android:id="@+id/linearColumnmovienight"
+                android:layout_gravity="top|start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_26pxv"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <FrameLayout android:id="@+id/frameStackmovienight"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_12pxv"
+                    android:layout_marginStart="@dimen/_10pxh" android:layout_width="@dimen/_77pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtMovieNight"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{listfootballmatch2RowModel.txtMovieNight}"
+                        style="@style/txtMontserratbold12_1" tools:text="@string/lbl_movie_night"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackmovienightOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_12pxv" android:layout_width="@dimen/_77pxh">
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtMovieNightOne"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{listfootballmatch2RowModel.txtMovieNightOne}"
+                            style="@style/txtMontserratbold12_1" tools:text="@string/lbl_movie_night"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtMovieNightTwo"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{listfootballmatch2RowModel.txtMovieNightTwo}"
+                            style="@style/txtMontserratbold12_1" tools:text="@string/lbl_movie_night"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/frameStackverydeleciousFour"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_6pxh"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_88pxh">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtVerydeleciousFour"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:text="@{listfootballmatch2RowModel.txtVerydeleciousFour}"
+                        style="@style/txtMontserratbold6" tools:text="@string/msg_very_delecious2"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackverydeleciousFive"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_15pxv" android:layout_width="@dimen/_88pxh">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtVerydeleciousFive"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:text="@{listfootballmatch2RowModel.txtVerydeleciousFive}"
+                            style="@style/txtMontserratbold6" tools:text="@string/msg_very_delecious2"/>
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txtVerydeleciousSix"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_4pxh"
+                            android:text="@{listfootballmatch2RowModel.txtVerydeleciousSix}"
+                            style="@style/txtMontserratbold6" tools:text="@string/msg_very_delecious2"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frameStackThree"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_40pxv"
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_marginTop="@dimen/_32pxv" android:layout_width="@dimen/_40pxh">
+                    <ImageView android:id="@+id/imageImageSixty"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_40pxh"
+                        android:layout_width="@dimen/_40pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_image40"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_image40"/>
+                    <FrameLayout android:id="@+id/frameStackTwo"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_40pxv" android:layout_width="@dimen/_40pxh">
+                        <ImageView android:id="@+id/imageImageSixtyFour"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_image40"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_image40"/>
+                        <ImageView
+                            android:id="@+id/imageImageSixtyEight"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_40pxh"
+                            android:layout_width="@dimen/_40pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_image40"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_image40"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearColumn1010Three"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_3">
+                <LinearLayout
+                    android:id="@+id/linearColumnmovienightThree"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtMovieNightThree"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{listfootballmatch2RowModel.txtMovieNightThree}"
+                        style="@style/txtMontserratbold12_1" tools:text="@string/lbl_movie_night"/>
+                    <TextView android:gravity="start"
+                        android:id="@+id/txtVerydeleciousSeven"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_1pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_4pxh"
+                        android:text="@{listfootballmatch2RowModel.txtVerydeleciousSeven}"
+                        style="@style/txtMontserratbold6" tools:text="@string/msg_very_delecious2"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageImageSeventyTwo"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_40pxh"
+                    android:layout_marginEnd="@dimen/_50pxh"
+                    android:layout_marginStart="@dimen/_50pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="@dimen/_40pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_image40"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_image40"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txt1010Three"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_5pxh"
+                    android:layout_marginStart="@dimen/_120pxh"
+                    android:layout_marginTop="@dimen/_20pxv"
+                    android:layout_width="wrap_content"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{listfootballmatch2RowModel.txt1010Three}"
+                    style="@style/txtMontserratbold10" tools:text="@string/lbl_10_10"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listicecreamdayRowModel" type="com.lordhebx.app.modules.menustaff.data.model.ListicecreamdayRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackicecreamday"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:ellipsize="end" android:gravity="top|start"
+            android:id="@+id/txtIceCreamDay"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{listicecreamdayRowModel.txtIceCreamDay}"
+            style="@style/txtMontserratbold12_1" tools:text="@string/lbl_ice_cream_day"/>
+        <FrameLayout android:id="@+id/frameStackicecreamdayOne"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_12pxv" android:layout_width="@dimen/_91pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtIceCreamDayOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listicecreamdayRowModel.txtIceCreamDayOne}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/lbl_ice_cream_day"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtIceCreamDayTwo"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listicecreamdayRowModel.txtIceCreamDayTwo}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/lbl_ice_cream_day"/>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

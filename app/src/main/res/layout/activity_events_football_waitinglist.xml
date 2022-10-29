@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="eventsFootballWaitinglistVM" type="com.lordhebx.app.modules.eventsfootballwaitinglist.data.viewmodel.EventsFootballWaitinglistVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnnotification"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_22pxh"
+        android:layout_marginStart="@dimen/_22pxh"
+        android:layout_marginTop="@dimen/_48pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_50">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_6pxh"
+            android:layout_marginStart="@dimen/_6pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearButton"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnmenu"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_weight="0.52"
+                    android:layout_width="0dp"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                    <ImageView android:gravity="start"
+                        android:id="@+id/imageMenu"
+                        android:layout_height="@dimen/_16pxh"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_menu}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_menu"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/frameStacknotification"
+                    android:layout_height="@dimen/_26pxv"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_245pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="@dimen/_24pxh" style="@style/groupStylecornerRadius_2">
+                    <ImageView android:id="@+id/imageNotification"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_26pxh"
+                        android:layout_width="@dimen/_24pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_notification"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_notification"/>
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearEventsFootball"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegray_50">
+            <LinearLayout android:id="@+id/linearColumnclose"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_3">
+                <FrameLayout android:id="@+id/frameStackfootballmatch"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_369pxv"
+                    android:layout_marginEnd="@dimen/_4pxh"
+                    android:layout_marginStart="@dimen/_18pxh"
+                    android:layout_marginTop="@dimen/_4pxv" android:layout_width="@dimen/_308pxh">
+                    <LinearLayout android:id="@+id/linearRowtime"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumn"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.97"
+                            android:layout_width="0dp"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                            <LinearLayout
+                                android:gravity="center_horizontal"
+                                android:id="@+id/linearColumnwaitinglist"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_29pxv"
+                                android:layout_marginTop="@dimen/_22pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                                <LinearLayout
+                                    android:id="@+id/linearColumnfootballmatch"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical" style="@style/groupStylegray_100cornerRadius">
+                                    <LinearLayout android:gravity="end"
+                                    android:id="@+id/linearRowfootballmatch"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_9pxh"
+                                    android:layout_marginStart="@dimen/_51pxh"
+                                    android:layout_marginTop="@dimen/_9pxv"
+                                    android:layout_width="match_parent" android:orientation="horizontal">
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txtFootballMatch"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.84"
+                                    android:layout_width="0dp"
+                                    android:lineSpacingExtra="@dimen/_1pxh"
+                                    android:singleLine="true"
+                                    android:text="@{eventsFootballWaitinglistVM.eventsFootballWaitinglistModel.txtFootballMatch}"
+                                    style="@style/txtMontserratbold24_1" tools:text="@string/lbl_football_match"/>
+                                    <TextView
+                                    android:ellipsize="end"
+                                    android:id="@+id/txt3414"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_6pxv"
+                                    android:layout_marginStart="@dimen/_14pxh"
+                                    android:layout_marginTop="@dimen/_7pxv"
+                                    android:layout_weight="0.16"
+                                    android:layout_width="0dp"
+                                    android:lineSpacingExtra="@dimen/_1pxh"
+                                    android:singleLine="true"
+                                    android:text="@{eventsFootballWaitinglistVM.eventsFootballWaitinglistModel.txt3414}"
+                                    style="@style/txtMontserratbold10" tools:text="@string/lbl_34_14"/>
+                                    </LinearLayout>
+                                    <TextView android:gravity="start"
+                                    android:id="@+id/txtTime"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/_141pxv"
+                                    android:layout_marginEnd="@dimen/_11pxh"
+                                    android:layout_marginStart="@dimen/_11pxh"
+                                    android:layout_marginTop="@dimen/_36pxv"
+                                    android:layout_width="match_parent"
+                                    android:lineSpacingExtra="@dimen/_3pxh"
+                                    android:text="@{eventsFootballWaitinglistVM.eventsFootballWaitinglistModel.txtTime}"
+                                    style="@style/txtMontserratbold12_1" tools:text="@string/msg_active_maria_pi"/>
+                                </LinearLayout>
+                                <TextView android:ellipsize="end"
+                                    android:gravity="center_horizontal"
+                                    android:id="@+id/txtWaitingList"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_71pxh"
+                                    android:layout_marginStart="@dimen/_71pxh"
+                                    android:layout_marginTop="@dimen/_32pxv"
+                                    android:layout_width="match_parent"
+                                    android:lineSpacingExtra="@dimen/_1pxh"
+                                    android:singleLine="true"
+                                    android:text="@{eventsFootballWaitinglistVM.eventsFootballWaitinglistModel.txtWaitingList}"
+                                    style="@style/txtMontserratbold24_1" tools:text="@string/lbl_waiting_list"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/imageClose"
+                            android:layout_height="@dimen/_9pxh"
+                            android:layout_marginBottom="@dimen/_330pxv"
+                            android:layout_marginEnd="@dimen/_3pxh"
+                            android:layout_marginStart="@dimen/_3pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_width="@dimen/_9pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_close"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearColumnaelita"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_60pxh"
+                        android:layout_marginStart="@dimen/_60pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtAelita"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_width="wrap_content"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{eventsFootballWaitinglistVM.eventsFootballWaitinglistModel.txtAelita}"
+                            style="@style/txtMontserratromanregular16" tools:text="@string/lbl_aelita"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtTimeOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_9pxv"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="@{eventsFootballWaitinglistVM.eventsFootballWaitinglistModel.txtTimeOne}"
+                            style="@style/txtMontserratromanbold14_3" tools:text="@string/msg_jan_10_2022_10"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageEllipse"
+                        android:layout_gravity="bottom|start"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_marginBottom="@dimen/_2pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_8pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_36pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_ellipse}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse"/>
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:gravity="start"
+                    android:id="@+id/recyclerListellipseOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_26pxh"
+                    android:layout_marginStart="@dimen/_26pxh"
+                    android:layout_marginTop="@dimen/_28pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_27pxh}" tools:itemCount="4" tools:listitem="@layout/row_listellipse_one1"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowellipse355"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_67pxv"
+                    android:layout_marginEnd="@dimen/_137pxh"
+                    android:layout_marginStart="@dimen/_137pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <View
+                        android:background="@drawable/rectangle_bg_indigo_50_radius_4"
+                        android:id="@+id/viewEllipse355"
+                        android:layout_height="@dimen/_8pxh" android:layout_width="@dimen/_8pxh"/>
+                    <View
+                        android:background="@drawable/rectangle_bg_white_a700_radius_4"
+                        android:id="@+id/viewRectangleNine"
+                        android:layout_height="@dimen/_8pxv"
+                        android:layout_marginStart="@dimen/_4pxh" android:layout_width="@dimen/_16pxh"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

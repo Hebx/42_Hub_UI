@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="foodsVM" type="com.lordhebx.app.modules.foods.data.viewmodel.FoodsVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameFoods"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_50">
+        <LinearLayout android:id="@+id/linearColumnnotification"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_23pxv"
+            android:layout_marginEnd="@dimen/_7pxh"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearButton"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnmenu"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_weight="0.52"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                        <ImageView android:gravity="start"
+                            android:id="@+id/imageMenu"
+                            android:layout_height="@dimen/_16pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_menu}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_menu"/>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/frameStacknotification"
+                        android:layout_height="@dimen/_26pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_12pxh"
+                        android:layout_marginStart="@dimen/_245pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_24pxh" style="@style/groupStylecornerRadius_2">
+                        <ImageView android:id="@+id/imageNotification"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_26pxh"
+                            android:layout_width="@dimen/_24pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_notification"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_notification"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearRowcheckin"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtCheckin"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_30pxv"
+                    android:layout_weight="0.17"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{foodsVM.foodsModel.txtCheckin}"
+                    style="@style/txtMontserratromanregular8" tools:text="@string/lbl_check_in"/>
+                <LinearLayout android:id="@+id/linearRowaddfoodbox"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_93pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.83"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal" style="@style/groupStylelime_3">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAddFoodbox"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_12pxv"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_marginTop="@dimen/_8pxv"
+                        android:layout_weight="0.88"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{foodsVM.foodsModel.txtAddFoodbox}"
+                        style="@style/txtMontserratbold15" tools:text="@string/lbl_add_food_box"/>
+                    <ImageView android:id="@+id/imageGrid"
+                        android:layout_height="@dimen/_15pxh"
+                        android:layout_marginBottom="@dimen/_11pxv"
+                        android:layout_marginEnd="@dimen/_12pxh"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_15pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_grid"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_grid"/>
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="start" android:id="@+id/recyclerFoods"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_38pxv"
+                android:layout_width="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" itemSpace="@{@dimen/_23pxh}"
+                tools:itemCount="4" tools:listitem="@layout/row_foods"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnFlushExtraBoxesOne"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_36pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_175pxv"
+                android:layout_width="@dimen/_181pxh"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_19pxh"
+                android:paddingStart="@dimen/_24pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:singleLine="true"
+                android:text="@string/msg_flush_extra_box"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_7" tools:text="@string/msg_flush_extra_box"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listtownhallmeetinRowModel" type="com.lordhebx.app.modules.menustaff.data.model.ListtownhallmeetinRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStacktownhallmeetin"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:ellipsize="end" android:gravity="top|start"
+            android:id="@+id/txtTownhallMeetin"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:singleLine="true"
+            android:text="@{listtownhallmeetinRowModel.txtTownhallMeetin}"
+            style="@style/txtMontserratbold12_1" tools:text="@string/msg_townhall_meetin"/>
+        <FrameLayout android:id="@+id/frameStacktownhallmeetinOne"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_12pxv" android:layout_width="@dimen/_113pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtTownhallMeetinOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listtownhallmeetinRowModel.txtTownhallMeetinOne}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/msg_townhall_meetin"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtTownhallMeetinTwo"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{listtownhallmeetinRowModel.txtTownhallMeetinTwo}"
+                style="@style/txtMontserratbold12_1" tools:text="@string/msg_townhall_meetin"/>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

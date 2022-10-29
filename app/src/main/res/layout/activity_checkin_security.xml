@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="checkinSecurityVM" type="com.lordhebx.app.modules.checkinsecurity.data.viewmodel.CheckinSecurityVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameCheckInSecurit"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_50">
+        <LinearLayout android:id="@+id/linearColumnnotification"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:id="@+id/linearButton"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnmenu"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15pxv"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_15pxv"
+                        android:layout_weight="0.52"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+                        <ImageView android:gravity="start"
+                            android:id="@+id/imageMenu"
+                            android:layout_height="@dimen/_16pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="centerCrop"
+                            circular="@{true}"
+                            imageRes="@{@drawable/img_menu}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_menu"/>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/frameStacknotification"
+                        android:layout_height="@dimen/_26pxv"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_12pxh"
+                        android:layout_marginStart="@dimen/_245pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="@dimen/_24pxh" style="@style/groupStylecornerRadius_2">
+                        <ImageView android:id="@+id/imageNotification"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_26pxh"
+                            android:layout_width="@dimen/_24pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_notification"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_notification"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <FrameLayout android:id="@+id/frameStackrectangleseven"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_272pxv"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginStart="@dimen/_20pxh" android:layout_width="@dimen/_315pxh">
+                <ImageView android:id="@+id/imageRectangleSeven"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_272pxh"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_16pxh}"
+                    imageRes="@{@drawable/img_rectangle7}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle7"/>
+                <FrameLayout android:id="@+id/frameStackpolygontwo"
+                    android:layout_gravity="top|start"
+                    android:layout_height="@dimen/_62pxv"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_48pxh">
+                    <ImageView android:id="@+id/imagePolygonTwo"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_62pxh"
+                        android:layout_width="@dimen/_48pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_polygon2"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_polygon2"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtCheckin"
+                        android:layout_gravity="top|start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_21pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_5pxh"
+                        android:layout_marginTop="@dimen/_21pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{checkinSecurityVM.checkinSecurityModel.txtCheckin}"
+                        style="@style/txtMontserratromanregular8" tools:text="@string/lbl_check_in"/>
+                </FrameLayout>
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnScan"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_56pxh"
+                android:layout_marginStart="@dimen/_56pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:paddingBottom="@dimen/_16pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_16pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_scan"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_5" tools:text="@string/lbl_scan"/>
+            <LinearLayout android:gravity="end"
+                android:id="@+id/linearTitle"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtRecentCheckins"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.74"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{checkinSecurityVM.checkinSecurityModel.txtRecentCheckins}"
+                    style="@style/txtMontserratromanregular20" tools:text="@string/lbl_recent_checkins"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtViewall"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    android:layout_marginStart="@dimen/_92pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.26"
+                    android:layout_width="0dp"
+                    android:lineSpacingExtra="@dimen/_1pxh"
+                    android:singleLine="true"
+                    android:text="@{checkinSecurityVM.checkinSecurityModel.txtViewall}"
+                    style="@style/txtMontserratromanbold14" tools:text="@string/lbl_view_all"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="start"
+                android:id="@+id/recyclerListellipse"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_43pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_28pxh}" tools:itemCount="4" tools:listitem="@layout/row_listellipse"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
